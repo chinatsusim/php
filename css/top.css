@@ -1,0 +1,121 @@
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+html{
+  max-height: 100vh!important;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+}
+
+body{
+  font-family: "jost", "Zen Kaku Gothic New", sans-serif !important;
+  color:#4b4b4b!important;
+  width:430px;
+  max-width: 100%;
+  margin:auto;
+  max-height: 100vh!important;
+  background-color: #F1EFE7;
+  text-align: center;
+}
+
+.hero{
+  position: relative;
+}
+
+.video-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(255, 255, 255, 0.212);
+}
+
+.text-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.text-box {
+  margin:0!important;
+}
+
+.text-box img{
+  width:80%;
+}
+
+.brand-copy{
+  font-size:14px;
+  width:80%;
+  color:#000;
+  text-align: center;
+  margin:auto;
+  line-height: 2;
+  letter-spacing: 0.12em;
+}
+
+.start-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  height: 44px;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  /* cursor: pointer; */
+}
+
+.for_signup{
+  margin-top:14px;
+  font-size:12px;
+  color: #000;
+}
+
+.for_signup a{
+  text-decoration: none;
+  font-size:12px;
+  color: #a40505;
+}
+
